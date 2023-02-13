@@ -1,1 +1,1 @@
-web: python manage.py migrate && gunicorn bhakti_sadhna_backend.wsgi
+web: gunicorn bhakti_sadhna_backend.wsgi
