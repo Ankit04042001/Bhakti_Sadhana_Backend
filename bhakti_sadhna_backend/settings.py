@@ -15,7 +15,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET2','')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', True)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ankit04042001.github.io']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'ankit04042001.github.io','web-production-094d4.up.railway.app']
 
 
 # Application definition
@@ -137,9 +137,13 @@ CORS_ORIGIN_ALLOW_ALL = False
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'https://ankit04042001.github.io'
+    'https://ankit04042001.github.io',
+    'https://web-production-094d4.up.railway.app'
 
 ]
+
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-094d4.up.railway.app']
 
 #database url configuration for production
 
