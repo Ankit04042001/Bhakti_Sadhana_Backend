@@ -150,3 +150,8 @@ CSRF_TRUSTED_ORIGINS = ['https://web-production-094d4.up.railway.app']
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+
+
+SESSION_ENGINE =  "django.contrib.sessions.backends.signed_cookies"
+SESSION_SAVE_EVERY_REQEUST = True
